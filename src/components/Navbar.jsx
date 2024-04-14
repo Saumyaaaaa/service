@@ -6,14 +6,17 @@ const Navbar = () => {
       <div className="flex justify-between items-center bg-white p-4 ">
         <div className="navbar-brand text-lg font-bold flex items-center font-['Exo']">
           <img src="/metalogo.png" alt="MetaLogic" className="h-12 w-12 mr-2" />
-          <h1 className="__className_1e998c flex text-3xl font-bold tracking-widest text-primary  text-blue-950">
+          <h1 className=" flex text-3xl font-bold tracking-widest text-primary  text-blue-950">
             <span>Meta</span>
             <span>Logic</span>
           </h1>
         </div>
-        <ul className="flex list-none gap-4">
+        <ul className="flex list-none gap-6">
           <li className="nav-item ">
-            <a href="/home" className="font-bold text-gray-800 font-inter">
+            <a
+              href="/home"
+              className="font-bold text-gray-800 font-Inter"
+            >
               Home
             </a>
           </li>
@@ -21,7 +24,7 @@ const Navbar = () => {
             <Services /> {/* Render the Services component */}
           </li>
           <li className="nav-item">
-            <a href="/career" className="font-bold text-gray-800 font-inter">
+            <a href="/career" className="font-bold text-gray-800 font-Inter">
               Career
             </a>
           </li>

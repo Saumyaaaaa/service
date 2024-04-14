@@ -21,12 +21,8 @@ const Services = () => {
         <div className="mx-auto hidden w-[60%] items-center justify-center md:flex">
           <img
             alt="Mobile"
-            loading="lazy"
-            width="500"
-            height="500"
-            decoding="async"
             src="services.svg"
-            style={{ color: "transparent" }}
+            
           />
         </div>
       </div>
