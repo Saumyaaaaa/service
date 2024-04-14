@@ -18,22 +18,26 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="mx-auto md:hidden mt-4">
+        {/* Hidden on small screens, shown on medium and large screens */}
+        <div className="hidden md:block mx-auto mt-4">
           <img
             alt="Mobile"
             src="services.svg"
             height="500"
             width="500"
             loading="lazy"
+            className="hidden md:block mx-auto"
           />
         </div>
-        <div className="hidden md:flex items-center justify-center mt-4">
+        {/* Hidden on medium and large screens, shown on small screens */}
+        <div className="md:hidden">
           <img
             alt="Mobile"
             src="services.svg"
             height="500"
             width="500"
             loading="lazy"
+            className="md:hidden"
           />
         </div>
       </div>
