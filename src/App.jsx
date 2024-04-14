@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/Section'
 import ServicesSection from './components/ServiceSection'
+import TechStackSection from './components/TechStackSection'
 
 
 
@@ -11,6 +12,8 @@ const App = () => {
       <Navbar/>
      <HeroSection/>
      <ServicesSection/>
+    
+     <TechStackSection/>
       
     </div>
   )
