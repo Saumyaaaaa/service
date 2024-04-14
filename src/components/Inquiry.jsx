@@ -1,22 +1,4 @@
-
-
-function IconArrowRight(props) {
-  return (
-    <svg
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      height="1em"
-      width="1em"
-      {...props}
-    >
-      <path d="M5 12h14M12 5l7 7-7 7" />
-    </svg>
-  );
-}
+import { LuArrowRight } from "react-icons/lu";
 
 const ProjectInquirySection = () => {
   return (
@@ -31,7 +13,7 @@ const ProjectInquirySection = () => {
         </p>
         <button className="bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 group">
           Get Your Quote{" "}
-          <IconArrowRight className="inline-block h-4 w-4 ml-2  group-hover:translate-x-1" />
+          <LuArrowRight className="inline-block h-4 w-4 ml-2 group-hover:translate-x-1" />
         </button>
       </div>
     </div>

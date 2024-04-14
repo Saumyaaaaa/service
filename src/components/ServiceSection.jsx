@@ -1,24 +1,6 @@
 
-
-// Define the IconArrowUpRight component
-const IconArrowUpRight = (props) => {
-  return (
-    <svg
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      height="1em"
-      width="1em"
-      className="lucide lucide-arrow-up-right absolute right-2 top-2 transition-all duration-500"
-      {...props}
-    >
-      <path d="M7 7h10v10M7 17L17 7" />
-    </svg>
-  );
-};
+// import { LuMoveUpRight } from "react-icons/lu";
+import { LuArrowUpRight } from "react-icons/lu";
 
 // Define the ServicesSection component
 const ServicesSection = () => {
@@ -90,7 +72,7 @@ const ServicesSection = () => {
             </span>
             {/* Position the arrow inside the box */}
             <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 mt-4 mr-4 ">
-              <IconArrowUpRight className="w-6 h-6 text-gray-500   group-hover:text-blue-500  translate-y-1 group-hover:translate-x-1" />
+              <LuArrowUpRight className="w-6 h-6 text-gray-500   group-hover:text-blue-500  translate-y-1 group-hover:translate-x-1" />
             </div>
           </div>
         ))}
