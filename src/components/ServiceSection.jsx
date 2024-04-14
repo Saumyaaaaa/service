@@ -1,5 +1,26 @@
-import React from "react";
 
+
+// Define the IconArrowUpRight component
+const IconArrowUpRight = (props) => {
+  return (
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      height="1em"
+      width="1em"
+      className="lucide lucide-arrow-up-right absolute right-2 top-2 transition-all duration-500"
+      {...props}
+    >
+      <path d="M7 7h10v10M7 17L17 7" />
+    </svg>
+  );
+};
+
+// Define the ServicesSection component
 const ServicesSection = () => {
   const services = [
     {
@@ -46,10 +67,11 @@ const ServicesSection = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="group relative flex items-center gap-8 rounded-xl border bg-white px-4 py-6 transition-all duration-500 hover:-translate-y-2"
+            className="group relative flex items-center gap-8 rounded-xl border bg-white px-4 py-6 transition-all duration-500 hover:-translate-y-2 cursor-pointer"
             style={{
               boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 20px",
               fontFamily: "Inter",
+              position: "relative", // Ensure relative positioning
             }}
           >
             <div className="rounded-2xl bg-blue-200 p-3">
@@ -66,6 +88,10 @@ const ServicesSection = () => {
             >
               {service.title}
             </span>
+            {/* Position the arrow inside the box */}
+            <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 mt-4 mr-4 ">
+              <IconArrowUpRight className="w-6 h-6 text-gray-500   group-hover:text-blue-500  translate-y-1 group-hover:translate-x-1" />
+            </div>
           </div>
         ))}
       </div>
