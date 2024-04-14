@@ -1,4 +1,6 @@
 
+import Footer from './components/Footer'
+import ProjectInquirySection from './components/Inquiry'
 import Navbar from './components/Navbar'
 import HeroSection from './components/Section'
 import ServicesSection from './components/ServiceSection'
@@ -17,6 +19,9 @@ const App = () => {
      <TechStackSection/>
      <TechnologyStack/>
      <HowItWorks/>
+     <ProjectInquirySection/>
+     <Footer/>
+
       
     </div>
   )
