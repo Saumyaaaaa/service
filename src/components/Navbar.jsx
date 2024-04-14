@@ -1,16 +1,15 @@
-
+import Services from "./Service";
 
 const Navbar = () => {
   return (
     <div className="w-full">
-      <div className="flex justify-between items-center bg-white p-4 shadow-md">
+      <div className="flex justify-between items-center bg-white p-4 ">
         <div className="navbar-brand text-lg font-bold flex items-center font-['Exo']">
-          <img
-            src="/metalogo.png"
-            alt="MetaLogic"
-            className="h-12 w-12 mr-2"
-          ></img>
-          MetaLogic
+          <img src="/metalogo.png" alt="MetaLogic" className="h-12 w-12 mr-2" />
+          <h1 className="__className_1e998c flex text-3xl font-bold tracking-widest text-primary  text-blue-950">
+            <span>Meta</span>
+            <span>Logic</span>
+          </h1>
         </div>
         <ul className="flex list-none gap-4">
           <li className="nav-item ">
@@ -19,9 +18,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/services" className="font-bold text-gray-800 font-inter">
-              Services
-            </a>
+            <Services /> {/* Render the Services component */}
           </li>
           <li className="nav-item">
             <a href="/career" className="font-bold text-gray-800 font-inter">
