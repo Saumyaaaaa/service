@@ -17,7 +17,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible]);
+  }, [prevScrollPos, visible]); 
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
