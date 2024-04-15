@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
-import Services from "./Service";
+
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -50,7 +50,9 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Services /> {/* Render the Services component */}
+              <a href="/service" className="font-bold text-gray-800 font-Inter">
+                Service
+              </a>
             </li>
             <li className="nav-item">
               <a href="/career" className="font-bold text-gray-800 font-Inter">
@@ -100,7 +102,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <Services /> {/* Render the Services component */}
+              <a href="/service" className="font-bold text-gray-800 font-Inter">
+                Service
+              </a>
             </li>
             <li>
               <a href="/career" className="font-bold text-gray-800 font-Inter">
