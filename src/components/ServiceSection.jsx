@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 
 const ServicesSection = () => {
@@ -8,7 +8,7 @@ const ServicesSection = () => {
     hoverSound.play(); // Play sound
   };
 
-  // Your services data array
+  
   const services = [
     {
       icon: "/computer.svg",
