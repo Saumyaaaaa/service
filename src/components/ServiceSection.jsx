@@ -1,9 +1,14 @@
-
-// import { LuMoveUpRight } from "react-icons/lu";
+import React from "react";
 import { LuArrowUpRight } from "react-icons/lu";
 
-// Define the ServicesSection component
 const ServicesSection = () => {
+  const playHoverSound = () => {
+    const hoverSound = new Audio("/click_002.ogg"); // Path to the sound file in the public folder
+    hoverSound.currentTime = 0; // Reset sound to start
+    hoverSound.play(); // Play sound
+  };
+
+  // Your services data array
   const services = [
     {
       icon: "/computer.svg",
@@ -53,8 +58,9 @@ const ServicesSection = () => {
             style={{
               boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 20px",
               fontFamily: "Inter",
-              position: "relative", // Ensure relative positioning
+              position: "relative",
             }}
+            onMouseEnter={playHoverSound} // Call playHoverSound function on hover
           >
             <div className="rounded-2xl bg-blue-200 p-3">
               <img
@@ -63,14 +69,8 @@ const ServicesSection = () => {
                 className="h-8 w-8 mr-2"
               />
             </div>
-            <span
-              style={{
-                fontFamily: "Inter",
-              }}
-            >
-              {service.title}
-            </span>
-            {/* Position the arrow inside the box */}
+            <span>{service.title}</span>
+            {/* Arrow */}
             <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 mt-4 mr-4 ">
               <LuArrowUpRight className="w-6 h-6 text-gray-500   group-hover:text-blue-500  translate-y-1 group-hover:translate-x-1" />
             </div>
