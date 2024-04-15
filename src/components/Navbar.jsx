@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
-
+import { FaInfo } from "react-icons/fa";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible]); 
+  }, [prevScrollPos, visible]);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -41,9 +41,7 @@ const Navbar = () => {
           </h1>
         </div>
         <div className="hidden md:flex list-none gap-6">
-          {/* Hide on small screens */}
           <ul className="flex space-x-6">
-            {/* Ensure horizontal layout for large screens */}
             <li className="nav-item">
               <a href="/home" className="font-bold text-gray-800 font-Inter">
                 Home
@@ -72,11 +70,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-4 items-center">
-          {/* Show "Get in Touch" button on large screens */}
+          {/* "Get in Touch" button */}
           <button className="px-4 py-2 rounded cursor-pointer bg-red-500 text-white hidden md:block">
             Get in Touch
           </button>
-          {/* Show menu icon on small screens */}
+          {/* 'i' icon */}
+          <FaInfo className="text-xl cursor-pointer" />
+          {/* Menu icon */}
           <div className="md:hidden">
             {showMenu ? (
               <RxCross1
