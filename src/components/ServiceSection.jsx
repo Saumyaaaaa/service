@@ -12,6 +12,7 @@ const ServicesSection = () => {
     {
       icon: "/computer.svg",
       title: "Custom Software Development",
+      
     },
     {
       icon: "/web.svg",
@@ -47,6 +48,10 @@ const ServicesSection = () => {
     },
   ];
 
+  const handleClick = (link) => {
+    window.location.href = link;
+  };
+
   return (
     <div className="container mx-auto px-4 font-semibold">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -55,6 +60,7 @@ const ServicesSection = () => {
             key={index}
             className="group relative flex items-center gap-8 rounded-xl border bg-white px-4 py-6 transition-all duration-500 hover:-translate-y-2 cursor-pointer shadow-md"
             onMouseEnter={playHoverSound} // Call playHoverSound function on hover
+            onClick={() => handleClick(service.link)} // Call handleClick function on click
           >
             <div className="rounded-2xl bg-blue-200 p-3">
               <img
