@@ -1,4 +1,4 @@
-import React from "react";
+
 import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
 import ProjectInquirySection from "./components/Inquiry";
@@ -8,7 +8,7 @@ import ServicesSection from "./components/ServiceSection";
 import TechnologyStack from "./components/TechnologyStack";
 import TechStackSection from "./components/TechStackSection";
 import HowItWorks from "./components/WorkingProcess";
-import HomePage from "./components/HomePage";
+
 
 const App = () => {
   return (
