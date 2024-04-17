@@ -40,18 +40,20 @@ const InfoModal = () => {
                       Service page of the Metalogic website, along with an inner
                       scroller. I attempted to recreate the inner scroller
                       feature used on this page, which allows for infinite
-                      scrolling. However, I encountered challenges and was
-                      unable to replicate it accurately. Despite this, my focus
-                      remained on implementing the inner scroller functionality,
-                      reflecting the original design of the Service page.
+                      scrolling. However, I encountered numerous challenges in
+                      attempting to replicate it accurately. Despite
+                      this, my focus remained on implementing the inner scroller
+                      functionality, reflecting the original design of the
+                      Service page.
                       <br />
                       <br />
                       By redesigning the Service page, I aimed to improve the
                       overall user experience, enhance the visual aesthetics,
                       and showcase Metalogic services and offerings in a more
                       compelling and organized manner. The new design features a
-                      clean and modern layout,  and  visually appealing content that
-                      better represents the website interactivity with users.
+                      clean and modern layout, and visually appealing content
+                      that better represents the website interactivity with
+                      users.
                     </p>
                   </div>
                 </div>
